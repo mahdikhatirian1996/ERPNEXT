@@ -1,0 +1,6 @@
+mysqldump --single-transaction --quick --lock-tables=false -u dev-db -p********** dev-db -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./frappe.dev/private/backups/20220725_120003-frappe_dev-database.sql.gz
+
+Backup Summary for frappe.dev at 2022-07-25 12:00:06.317905
+Config  : ./frappe.dev/private/backups/20220725_120003-frappe_dev-site_config_backup.json 83.0B
+Database: ./frappe.dev/private/backups/20220725_120003-frappe_dev-database.sql.gz         1.0MiB
+Backup for Site frappe.dev has been successfully completed
